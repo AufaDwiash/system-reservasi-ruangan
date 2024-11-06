@@ -1,0 +1,124 @@
+/* Background Video Styling */
+#bg-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(60%);
+}
+
+/* Container Styling */
+.container {
+    position: relative;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.096);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 600px;
+    margin: 60px auto;
+    box-shadow: 0px 4px 12px rgba(255, 196, 0, 0.25);
+    color: #333;
+}
+
+/* Title Styling */
+h1 {
+    font-weight: 700;
+    color: #e4f738;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form Heading */
+.form-heading {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Form Labels */
+#reservation-form label {
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+/* Input and Form Elements */
+#reservation-form input,
+#reservation-form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    color: #333;
+    transition: border-color 0.3s;
+}
+
+#reservation-form input:focus,
+#reservation-form select:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Room and Reservation Lists */
+#room-list,
+#reservation-list {
+    color: #ffffff;
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+/* Button Styling */
+.container button {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.container button:hover {
+    background-color: #0056b3;
+}
+
+/* Reservation Item Styling */
+#reservation-list div {
+    background-color: rgba(8, 8, 8, 0.486);
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 4px rgba(219, 148, 148, 0.158);
+}
+
+/* Cancel Button Styling */
+#reservation-list button {
+    background-color: #dc3545;
+    color: #ffffff;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#reservation-list button:hover {
+    background-color: #c82333;
+}
